@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import static game_api.player.player_data.play_log;
 import static game_api.player.player_data.player_name;
 
 public class player_data_load {
@@ -22,7 +23,7 @@ public class player_data_load {
         }
 
         player_name = pro.getProperty("player_name");
-
+        play_log = Boolean.parseBoolean(pro.getProperty("play_log"));
 
     }
 

@@ -1,7 +1,8 @@
 package game_api.map;
 
+import game_api.game_start.start_game;
+
 import javax.swing.*;
-import java.awt.*;
 
 public class load_map {
 
@@ -32,6 +33,11 @@ public class load_map {
         // ★ 프레임에다가 버튼 추가
         frm.getContentPane().add(btn1);
         frm.getContentPane().add(btn2);
+
+        btn1.addActionListener(event -> {
+            start_game.start_game();
+            frm.dispose();
+        });
 
         btn2.addActionListener(event -> {
             System.exit(1);

@@ -8,15 +8,13 @@ import javax.swing.*;
 
 public class basic {
 
-    public static void game_start() {
-        JOptionPane.showMessageDialog(null, "게임을 시작합니다");
+    public static void game() {
         loading();
-
     }
 
     public static void loading() {
-        load_map.loading_map();
         player_data_load.player_data_load();
+        load_map.loading_map();
     }
 
     public static void data_saveing() {
