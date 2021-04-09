@@ -26,7 +26,7 @@ public class first_play {
             JOptionPane.showMessageDialog(null, "파일 불러오기 오류 -> " + e);
             game_erorr.game_erorr();
         }
-        System.out.println(player_name);
+        System.out.println("player_name:" + player_name);
     }
 
 }
